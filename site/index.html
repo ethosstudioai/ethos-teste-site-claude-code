@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Estúdio Modelo — site de teste técnico</title>
+<meta name="robots" content="noindex, nofollow">
+<style>
+  :root {
+    --bg: #0f0f10;
+    --bg-soft: #17171a;
+    --card: #1e1e22;
+    --text: #f2f1ee;
+    --text-muted: #a9a7a2;
+    --accent: #d9b26a;
+    --border: #2c2c30;
+    --radius: 14px;
+    --max: 960px;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
+  a { color: inherit; }
+
+  .test-banner {
+    background: #3a2f14;
+    color: #f3d99b;
+    text-align: center;
+    font-size: 0.82rem;
+    padding: 8px 16px;
+    border-bottom: 1px solid #55461e;
+  }
+
+  header {
+    padding: 96px 24px 72px;
+    max-width: var(--max);
+    margin: 0 auto;
+    text-align: left;
+  }
+  .eyebrow {
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    font-size: 0.78rem;
+    font-weight: 600;
+    margin-bottom: 18px;
+  }
+  h1 {
+    font-size: clamp(2.2rem, 5vw, 3.4rem);
+    line-height: 1.1;
+    margin: 0 0 20px;
+    max-width: 14ch;
+  }
+  header p.lead {
+    color: var(--text-muted);
+    font-size: 1.15rem;
+    max-width: 52ch;
+    margin: 0 0 32px;
+  }
+  .cta-row { display: flex; gap: 14px; flex-wrap: wrap; }
+  .btn {
+    display: inline-block;
+    padding: 13px 26px;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition: transform 0.15s ease, opacity 0.15s ease;
+  }
+  .btn:hover { transform: translateY(-1px); opacity: 0.92; }
+  .btn-primary { background: var(--accent); color: #221a08; }
+  .btn-ghost { background: transparent; border: 1px solid var(--border); color: var(--text); }
+
+  section { max-width: var(--max); margin: 0 auto; padding: 64px 24px; border-top: 1px solid var(--border); }
+  section h2 { font-size: 1.6rem; margin: 0 0 8px; }
+  section .sub { color: var(--text-muted); margin: 0 0 40px; max-width: 60ch; }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+  }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 26px;
+  }
+  .card .num { color: var(--accent); font-size: 0.8rem; font-weight: 700; letter-spacing: 0.08em; }
+  .card h3 { margin: 10px 0 8px; font-size: 1.08rem; }
+  .card p { margin: 0; color: var(--text-muted); font-size: 0.95rem; }
+
+  .about {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 40px;
+    align-items: start;
+  }
+  @media (max-width: 720px) { .about { grid-template-columns: 1fr; } }
+  .about ul { padding-left: 20px; margin: 0; color: var(--text-muted); }
+  .about li { margin-bottom: 10px; }
+
+  footer {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 48px 24px 80px;
+    border-top: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+  }
+</style>
+</head>
+<body>
+
+  <div class="test-banner">
+    Este é um site de teste técnico gerado via Claude Code — conteúdo fictício, não representa a identidade oficial da Ethos Studio.
+  </div>
+
+  <header>
+    <div class="eyebrow">Estúdio Modelo · Conteúdo &amp; Automação</div>
+    <h1>Um site simples, publicado do jeito certo.</h1>
+    <p class="lead">
+      Página institucional de exemplo, gerada como teste técnico para avaliar se um site real e apresentável
+      pode ser produzido rapidamente, sem ferramenta paga adicional além do que já está em uso.
+    </p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="#servicos">Ver serviços</a>
+      <a class="btn btn-ghost" href="#contato">Contato</a>
+    </div>
+  </header>
+
+  <section id="servicos">
+    <h2>O que este estúdio faria</h2>
+    <p class="sub">Exemplo de estrutura de oferta — conteúdo ilustrativo, não uma oferta comercial real.</p>
+    <div class="grid">
+      <div class="card">
+        <div class="num">01</div>
+        <h3>Conteúdo e carrosséis</h3>
+        <p>Produção de material visual com direção de arte e consistência de marca.</p>
+      </div>
+      <div class="card">
+        <div class="num">02</div>
+        <h3>Automação de atendimento</h3>
+        <p>Fluxos de resposta e triagem para canais como WhatsApp, com handoff humano quando necessário.</p>
+      </div>
+      <div class="card">
+        <div class="num">03</div>
+        <h3>Gestão e retenção de clientes</h3>
+        <p>Organização de dados de clientes para decisões melhores sobre frequência e retenção.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre">
+    <div class="about">
+      <div>
+        <h2>Sobre este teste</h2>
+        <p class="sub">
+          Esta página não define identidade visual, oferta ou preço da Ethos Studio — essas decisões continuam em aberto.
+          O único objetivo aqui é técnico: medir se o Claude Code consegue gerar, sozinho, um resultado publicável
+          com boa hierarquia visual, sem retrabalho manual pesado.
+        </p>
+      </div>
+      <ul>
+        <li>Gerado numa única passada, sem framework externo.</li>
+        <li>HTML e CSS puros — sem dependência de build ou pacote de terceiros.</li>
+        <li>Pensado para publicação gratuita (ex.: Cloudflare Pages, GitHub Pages).</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contato">
+    <h2>Contato</h2>
+    <p class="sub">Campo de exemplo — sem formulário funcional nesta versão de teste.</p>
+    <div class="grid">
+      <div class="card">
+        <h3>E-mail</h3>
+        <p>contato@exemplo.com.br</p>
+      </div>
+      <div class="card">
+        <h3>Instagram</h3>
+        <p>@exemplo.estudio</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span>Site de teste técnico — Ethos Studio, julho de 2026.</span>
+    <span>Gerado com Claude Code, sem custo adicional além da assinatura já paga.</span>
+  </footer>
+
+</body>
+</html>
